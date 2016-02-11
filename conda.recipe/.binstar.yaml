@@ -1,0 +1,18 @@
+package: conda_build_test
+
+script:
+  - conda build .
+
+platform:
+  - linux-64
+
+# build_targets: conda
+# build_targets: /opt/anaconda/my-package.tar.bz2
+
+# quiet: True
+
+# install_channels:
+#    - r
+#    - http://repo.continuum.io/pkgs/pro/
+#    - http://repo.continuum.io/pkgs/free/
+
