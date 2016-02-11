@@ -16,9 +16,6 @@ before_install:
   - conda config --add channels r
   - conda config --remove channels defaults --force
 
-# install:
-#   - conda install conda-build
-
 script:
-  - conda build populate27 2> /dev/null
-  - conda build populate35 2> /dev/null
+  - conda build populate27
+  - conda build populate35
