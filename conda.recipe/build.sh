@@ -1,7 +1,5 @@
 printenv
 conda info
-# PKG_VERSION=0.0.0
-# CPU_COUNT=8
 
 TOKEN=ae-3f82bb6b-d33f-43d1-b8f1-a14e2ae1c1ed
 
@@ -13,4 +11,7 @@ echo $conda_pkgs_dir
 
 pushd $conda_pkgs_dir
 
-conda list --canonical --no-pip --name _build | xargs -t -I{} -n1 -P$CPU_COUNT anaconda --token $TOKEN upload --user aetrial --label $PKG_VERSION {}.tar.bz2
+conda list --canonical --no-pip --name _build | \
+    xargs -t -I{} -n1 -P$CPU_COUNT \
+        anaconda --token $TOKEN \
+            upload --user aetrial --force --label $PKG_VERSION {}.tar.bz2
