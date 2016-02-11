@@ -20,5 +20,5 @@ before_install:
 #   - conda install conda-build
 
 script:
-  - conda build populate27
-  - conda build populate35
+  - conda build populate27 2> /dev/null
+  - conda build populate35 2> /dev/null
