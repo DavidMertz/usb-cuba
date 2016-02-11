@@ -7,11 +7,6 @@ source $SRC_DIR/env
 printenv
 conda info
 
-if [[ -n "$TOKEN" ]]; then
-    echo "TOKEN env var not set."
-    exit 1
-fi
-
 pkg_names="$(conda list --canonical --no-pip)"
 conda_pkgs_dir="$(conda info 2> /dev/null | grep "package cache" | cut -d: -f2 | tr -d '[[:space:]]')"
 
