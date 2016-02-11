@@ -5,6 +5,7 @@ package:
 requirements:
   build:
     - python
+    - anaconda-client
 
   # build:
   #   - anaconda 2.5.0 np110py27_0
