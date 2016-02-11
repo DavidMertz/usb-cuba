@@ -1,7 +1,10 @@
 printenv
 conda info
 
-TOKEN=ae-3f82bb6b-d33f-43d1-b8f1-a14e2ae1c1ed
+if [[ -n "$TOKEN" ]]; then
+    echo "TOKEN env var not set."
+    exit 1
+fi
 
 pkg_names="$(conda list --canonical --no-pip)"
 conda_pkgs_dir="$(conda info 2> /dev/null | grep "package cache" | cut -d: -f2 | tr -d '[[:space:]]')"

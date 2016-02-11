@@ -1,0 +1,26 @@
+language: python
+sudo: false
+
+matrix:
+  include:
+    - os: linux
+      sudo: required
+    - os: osx
+      language: generic
+
+before_install:
+  - source travis_bootstrap_conda.sh
+  - uname -a
+  - conda config --add channels http://repo.continuum.io/pkgs/free/
+  - conda config --add channels http://repo.continuum.io/pkgs/pro/
+  - conda config --add channels r
+  - conda config --remove channels defaults
+
+install:
+  - conda install conda-build
+
+script:
+  - source env
+  - export TOKEN="$(TRAVIS_TOKEN)"
+  - conda build populate27
+  - conda build populate35
