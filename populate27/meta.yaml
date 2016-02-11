@@ -1,0 +1,21 @@
+package:
+  name: populate27
+  version: "0.0.0"
+
+requirements:
+  build:
+    - anaconda 2.5.0 np110py27_0
+    - bokeh
+    - numba
+    - dask
+    - odo
+    - blaze
+    - holoviews
+  run:
+    - anaconda 2.5.0 np110py27_0
+    - bokeh
+    - numba
+    - dask
+    - odo
+    - blaze
+    - holoviews

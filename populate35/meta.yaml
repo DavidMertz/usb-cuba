@@ -1,10 +1,10 @@
 package:
-  name: repo-populate
+  name: populate35
   version: "0.0.0"
 
 requirements:
   build:
-    - anaconda 2.5.0 np110py27_0
+    - anaconda 2.5.0 np110py35_0
     - bokeh
     - numba
     - dask
@@ -12,7 +12,7 @@ requirements:
     - blaze
     - holoviews
   run:
-    - anaconda 2.5.0 np110py27_0
+    - anaconda 2.5.0 np110py35_0
     - bokeh
     - numba
     - dask

@@ -1,4 +1,4 @@
-package: conda_build_test
+package: populate27
 
 script:
   - conda build .

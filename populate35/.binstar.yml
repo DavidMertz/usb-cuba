@@ -1,0 +1,16 @@
+package: populate35
+
+script:
+  - conda build .
+
+platform:
+  - linux-64
+
+build_targets: conda
+
+quiet: True
+
+install_channels:
+   - r
+   - http://repo.continuum.io/pkgs/pro/
+   - http://repo.continuum.io/pkgs/free/

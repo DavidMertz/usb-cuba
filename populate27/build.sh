@@ -4,10 +4,7 @@ conda info
 TOKEN=ae-3f82bb6b-d33f-43d1-b8f1-a14e2ae1c1ed
 
 pkg_names="$(conda list --canonical --no-pip)"
-
 conda_pkgs_dir="$(conda info 2> /dev/null | grep "package cache" | cut -d: -f2 | tr -d '[[:space:]]')"
-
-echo $conda_pkgs_dir
 
 pushd $conda_pkgs_dir
 
