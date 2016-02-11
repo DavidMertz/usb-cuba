@@ -30,6 +30,7 @@ travis_bootstrap_conda() {
     esac
 
     conda create -q -n test-environment python="$python_version" setuptools pip virtualenv
+    conda install conda-build
     source activate test-environment
 
     if [[ $(uname -s) == "Linux" ]]; then
