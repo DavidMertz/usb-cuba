@@ -2,3 +2,4 @@ anaconda auth --create --name anacondacloud-all \
     --organization aetrial \
     --scopes all
     # --url anaconda.org
+
