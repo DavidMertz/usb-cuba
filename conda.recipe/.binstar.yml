@@ -6,8 +6,7 @@ script:
 platform:
   - linux-64
 
-# build_targets: conda
-# build_targets: /opt/anaconda/my-package.tar.bz2
+build_targets: conda
 
 quiet: True
 
@@ -15,4 +14,3 @@ install_channels:
    - r
    - http://repo.continuum.io/pkgs/pro/
    - http://repo.continuum.io/pkgs/free/
-

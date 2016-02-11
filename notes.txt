@@ -1,0 +1,1 @@
+anaconda auth --create --name anacondacloud-all -o aetrial -s all --url anaconda.org
