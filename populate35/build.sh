@@ -15,4 +15,4 @@ pushd $conda_pkgs_dir
 conda list --canonical --no-pip --name _build | \
     xargs -t -I{} -n1 -P$CPU_COUNT \
         anaconda --token $TOKEN \
-            upload --user aetrial --force --label $PKG_VERSION {}.tar.bz2
+            upload --user aetrial --force --label $PKG_VERSION {}.tar.bz2 2>&1 > /dev/null
