@@ -1,3 +1,6 @@
+set -e
+set -u
+
 printenv
 conda info
 

@@ -20,7 +20,7 @@ before_install:
 #   - conda install conda-build
 
 script:
-  - source env
+  - source ./env
   - export TOKEN="$(TRAVIS_TOKEN)"
   - conda build populate27
   - conda build populate35
