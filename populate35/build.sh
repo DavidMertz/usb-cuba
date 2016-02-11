@@ -1,5 +1,8 @@
 set -e
 set -u
+set -x
+
+source $SRC_DIR/env
 
 printenv
 conda info
