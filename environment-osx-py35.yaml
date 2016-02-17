@@ -1,6 +1,6 @@
 name: usb-cuba-osx-py35
 dependencies:
-- anaconda=2.5.0
+- anaconda=2.5
 - python=3.5
 - anaconda-build
 - bcolz

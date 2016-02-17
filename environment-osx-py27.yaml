@@ -1,6 +1,6 @@
 name: usb-cuba-osx-py27
 dependencies:
-- anaconda=2.5.0
+- anaconda=2.5
 - python=2.7
 - anaconda-build
 - bcolz
