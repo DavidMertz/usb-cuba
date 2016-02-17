@@ -1,4 +1,4 @@
-name: usb-cuba
+name: usb-cuba-osx-py35
 dependencies:
 - anaconda=2.5.0
 - python=3.5
@@ -12,7 +12,7 @@ dependencies:
 - cmake
 - conda-api
 - coverage
-- csvkit
+  #- csvkit
 - cvxopt
 - dask
 - dbf
@@ -31,8 +31,7 @@ dependencies:
 - iso8601
 - jmespath
 - joblib
-- ldap3
-- libnetcdf
+  #- libnetcdf
 - line_profiler
 - lz4
 - markdown
@@ -40,67 +39,64 @@ dependencies:
 - mathjax
 - memory_profiler
 - mpi4py
-- mpich2
+  #- mpich2
 - mpmath
 - msgpack-python
-- mysql-python
+  #- mysql-python
 - nano
 - ncurses
-- netcdf4
+  #- netcdf4
 - numba
 - numpydoc
 - odo
 - openmpi
-- orange
+  #- orange
 - pandas-datareader
-- pandasql
+  #- pandasql
 - pcre
-- posix-ipc
-- progressbar
+  #- posix-ipc
+  #- progressbar
 - proj4
-- protobuf
-- psycopg2
-- pyamg
+  #- protobuf
+  #- psycopg2
 - pylint
 - pymc
 - pymongo
 - pymysql
-- pyobdc
+  #- pyobdc
 - pyopengl
 - pyopengl-accelerate
 - pyproj
-- pysal
-- pysam
+  #- pysal
+  #- pysam
 - pyserial
-- python-ntlm
+  #- python-ntlm
 - r-essentials
 - routes
 - runipy
 - sas7bdat
 - scikit-bio
-- scrapy
+  #- scrapy
 - seaborn
 - semantic_version
 - sh
 - shapely
-- snakebite
+  #- snakebite
 - snakeviz
 - sqlparse
 - swig
-- theano
-- traits
-- traitsui
+  #- theano
 - translationstring
 - twisted
 - unidecode
-- unixodbc
-- uuid
-- websocket
-- webtest
+  #- unixodbc
+  #- uuid
+  #- websocket
+  #- webtest
 - whoosh
 - workerpool
 - wrapt
 - xarray
-- xlutils
+  #- xlutils
 - yt
     
