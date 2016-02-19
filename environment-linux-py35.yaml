@@ -12,7 +12,7 @@ dependencies:
 - cmake
 - conda-api
 - coverage
-- csvkit
+# - csvkit # conflict with package anaconda 2.5
 - cvxopt
 - dask
 - dbf
@@ -31,7 +31,7 @@ dependencies:
 - iso8601
 - jmespath
 - joblib
-- libnetcdf
+# - libnetcdf # conflict with package anaconda 2.5
 - line_profiler
 - lz4
 - markdown
@@ -42,46 +42,46 @@ dependencies:
 - mpich2
 - mpmath
 - msgpack-python
-- mysql-python
+# - mysql-python # conflict with package python 3.5
 - nano
 - ncurses
-- netcdf4
+# - netcdf4 # conflict with package anaconda 2.5
 - numba
 - numpydoc
 - odo
-- openmpi
-- orange
+# - openmpi # no package found in linux-64 channels
+# - orange # conflict with package python 3.5
 - pandas-datareader
-- pandasql
+# - pandasql # conflict with package python 3.5
 - pcre
-- posix-ipc
-- progressbar
+# - posix-ipc # no package found in linux-64 channels
+# - progressbar # conflict with package python 3.5
 - proj4
-- protobuf
-- psycopg2
+# - protobuf # conflict with package python 3.5
+# - psycopg2 # conflict with package anaconda 2.5
 - pylint
 - pymc
 - pymongo
 - pymysql
-- pyobdc
+# - pyobdc # no package found in linux-64 channels
 - pyopengl
 - pyopengl-accelerate
 - pyproj
-- pysal
-- pysam
+# - pysal # conflict with package python 3.5
+# - pysam # conflict with package python 3.5
 - pyserial
-- python-ntlm
-- r-essentials
+# - python-ntlm # conflict with package python 3.5
+# - r-essentials # no package found in linux-64 channels
 - routes
 - runipy
 - sas7bdat
 - scikit-bio
-- scrapy
+# - scrapy # conflict with package python 3.5
 - seaborn
 - semantic_version
 - sh
 - shapely
-- snakebite
+# - snakebite # conflict with package python 3.5
 - snakeviz
 - sqlparse
 - swig
@@ -90,13 +90,12 @@ dependencies:
 - twisted
 - unidecode
 - unixodbc
-- uuid
-- websocket
-- webtest
+# - uuid # conflict with package python 3.5
+# - websocket # conflict with package anaconda 2.5
+# - webtest # conflict with both anaconda 2.5 and python 3.5
 - whoosh
 - workerpool
 - wrapt
 - xarray
-- xlutils
+# - xlutils # conflict with package python 3.5
 - yt
-    
